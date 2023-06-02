@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+}
+
+
+
+.wrapper {
+    display: grid;
+    margin: auto;
+
+}
+
+div {
+    padding: 10px;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+img {
+    border-radius: 20px;
+}
+
+.link-item {
+    text-decoration: none;
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 40px;
+}
+
+.link-item:hover {
+    background-color: rgb(135, 135, 135);
+    color: #fff;
+}
+
+.box{
+    height: 30px;
+    display: flex;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0, 0, 0.4);
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.box:hover input{
+    width: 20vw;
+}
+
+.box input:focus{
+    width: 20vw;
+}
+
+.box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.box .fas {
+    color: rgb(37, 37, 37);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.link-wrapper{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: auto;
+    justify-content: center;
+}
+
+.item:hover .link-wrapper{
+    display: flex;
+}
+
+.item:hover img {
+    opacity: 0.5;
+}
+
+
+@media screen and (max-width: 616px) {
+    h1{
+    font-size: x-large;
+    }
+}
+@media screen and (max-width: 440px) {
+    h1{
+    font-size:large;
+    }
+}
+@media screen and (max-width: 280px) {
+    h1{
+    font-size:medium;
+    }
+}
+
+
+@media (min-width: 600px) {
+  .wrapper { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 800px) {
+  .wrapper { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1100px) {
+  .wrapper { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 1210px) {
+  .wrapper { grid-template-columns: repeat(5, 1fr); }
+}
+
+@media (min-width: 1590px) {
+  .wrapper { grid-template-columns: repeat(6, 1fr); }
+}
+
+
